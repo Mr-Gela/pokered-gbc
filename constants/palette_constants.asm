@@ -257,4 +257,7 @@ IF GEN_2_GRAPHICS
 	const PAL_AGATHA        ; $E9
 	const PAL_LANCE         ; $EA
 	const PAL_HERO          ; $EB
+	const PAL_HEROINE       ; $EB
+	const PAL_RIVALA        ; $EB
+	const PAL_RIVALB        ; $EB
 ENDC

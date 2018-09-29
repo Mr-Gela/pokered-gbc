@@ -31,14 +31,23 @@ _IntroducePlayerText::
 	line "your name?"
 	prompt
 
-_IntroduceRivalText::
-	text "This is my grand-"
-	line "son. He's been"
-	cont "your rival since"
-	cont "you were a baby."
+_IntroduceRivalAText::
+	text "This is a friend"
+	line "of yours."
+	cont "His name is"
+	cont "----."
 
-	para "...Erm, what is"
-	line "his name again?"
+	para "Whatever place-"
+	line "holder text."
+	prompt
+	
+_IntroduceRivalBText::
+	text "And her, she's"
+	line "a friend of"
+	cont "yours too!"
+
+	para "Whatever place-"
+	line "holder text."
 	prompt
 
 _OakSpeechText3::
@@ -53,3 +62,8 @@ _OakSpeechText3::
 	cont "with #MON"
 	cont "awaits! Let's go!"
 	done
+
+_BoyGirlText::
+    text "What will you"
+    line "play as?"
+    done

@@ -834,22 +834,22 @@ SetPal_TrainerCard:
 	ld a,2
 	ld [rSVBK],a
 	
-	ld d,PAL_MEWMON
+	ld d,PAL_BROWNMON	; Leader Faces
 	ld e,0
-	callba LoadSGBPalette
-	ld d,PAL_BADGE
+	callba LoadSGBPalette 
+	ld d,PAL_CYANMON ; ????
 	ld e,1
 	callba LoadSGBPalette
-	ld d,PAL_REDMON
+	ld d,PAL_BLUEMON ; ????
 	ld e,2
 	callba LoadSGBPalette
-	ld d,PAL_YELLOWMON
+	ld d,PAL_GREYMON ; ????
 	ld e,3
 	callba LoadSGBPalette
 
 	; Red's palette
 IF GEN_2_GRAPHICS
-	ld d, PAL_HERO
+	ld d, PAL_OAK ; Player Sprite
 ELSE
 	ld d, PAL_REDMON
 ENDC
@@ -860,7 +860,7 @@ ENDC
 IF DEF(_BLUE)
 	ld d, PAL_BLUEMON
 ELSE ; _RED
-	ld d, PAL_REDMON
+	ld d, PAL_GREYMON ; bg tiles
 ENDC
 	ld e,5
 	callba LoadSGBPalette
