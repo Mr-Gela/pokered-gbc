@@ -849,7 +849,7 @@ SetPal_TrainerCard:
 
 	; Red's palette
 IF GEN_2_GRAPHICS
-	ld d, PAL_OAK ; Player Sprite
+	ld d, PAL_HERO ; Player Sprite
 ELSE
 	ld d, PAL_REDMON
 ENDC
